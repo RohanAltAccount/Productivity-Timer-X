@@ -4,14 +4,14 @@
   --wrapper-height: 100vh;
 
   /* Fonts for different elements */
-  --font-family: sans-serif;
+  --font-family: roboto;
   --font-family-list: monospace;
 
   /* Colors you'll see cascade through the elements */
-  --color-bg: #99ddff; /* Used for the page body background */
-  --color-bg-alt: #33b1ff; /* Used for social icons on hover */
+  --color-bg: #d4ff00; /* Used for the page body background */
+  --color-bg-alt: #050c59; /* Used for social icons on hover */
   --color-text-main: #004099; /* List text ann social icons on hover */
-  --color-primary: #006aff; /* Headers and borders */
+  --color-primary: #0318ff; /* Headers and borders */
   --color-highlight: #e7f7fe; /* Highlights */
 }
 
@@ -49,7 +49,7 @@ body {
 .illustration {
   max-width:30%;
   margin:1rem 0 2rem 0;
-  animation: 1s ease-out 0s 1 spinIn;
+  animation: 1s ease-out 1s 1 bounce;
 }
 @keyframes spinIn {
   0% {
@@ -58,6 +58,14 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+  @keyframes bounce {
+  0% {
+    transform: translate(0 px, 0 px);
+  }
+    100% {
+    transform: translate(60 px, 0 px);
+    }
 }
 .illustration-404 {
   max-width:30%;
@@ -119,7 +127,7 @@ a:focus {
   display: flex;
   justify-content: flex-end;
 }
-a.remix {
+a.github {
   background: var(--color-bg-alt);
   color:var(--color-highlight);
   border: 2px solid var(--color-highlight);
@@ -127,7 +135,8 @@ a.remix {
   padding:0.5rem;
   font-weight:bold;
 }
-a.remix:hover {
+a.github:hover {
   background: var(--color-primary);
   color:var(--color-highlight);
+  font-weight: lighter;
 }
