@@ -1,11 +1,18 @@
-/*
-  This is your site JavaScript code - you can add interactivity!
-*/
+const timerButton = document.getElementById("timerTransport");
+function getTimeLeft() {
+  const now = new Date();
+  const endOfDay = new Date();
+  endOfDay.setHours(23, 59, 59, 999); // today at 23:59:59.999
 
-// Print a message in the browser's dev tools console each time the page loads
-// Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
-// script.js
-document.getElementById("timerTransport").addEventListener("click", () => {
-  alert("clicked");
-});
+  const diffMs = endOfDay - now; // difference in milliseconds
+  const diffSeconds = Math.floor(diffMs / 1000); //converts to seconds
+  const minutes = Math.floor(diffSeconds / 60); //converts to minutes 
+  const seconds = diffSeconds % 60; //uses mod to calculate remainder of remaining seconds
+  return { minutes, seconds }; //outputs
+}
+function showTimeLeft() {
+  const { minutes, seconds } = getTimeLeft();
+  alert(`You've got ${minutes} minutes, ${seconds} seconds left in your day. Come on. Go be productive.`);
+} //shows the countdown and stuff
+timerButton.addEventListener("click", showTimeLeft); //click handler
+
