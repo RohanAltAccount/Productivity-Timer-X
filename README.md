@@ -7,7 +7,7 @@ Add Muhammed Ali or someone inspirational giving you quotes and a live countdown
 
 ## How to use
 
-Open https://sturdy-adventure-jjwqv7rr9qpqhp76p-5173.app.github.dev/ in a browser and click the button. Done.  
+Open https://rohanaltaccount.github.io/Productivity-Timer-X/ in a browser and click the button. Done.  
 
 ## Tech
 
