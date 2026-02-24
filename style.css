@@ -175,7 +175,7 @@ a.github:hover {
   color: #ffffff;
 }
 .timer-warning {
-  color: #FFA500;
+  color: #FFA500 !important;
 }
 
 .timer-danger {
