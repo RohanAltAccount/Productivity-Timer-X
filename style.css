@@ -172,9 +172,9 @@ a.github:hover {
 }
 
 .timer-normal {
-  color: #222;
+  color: white;
 }
-.timer-low {
+.timer-warning {
   color: orange;
 }
 
