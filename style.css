@@ -170,3 +170,14 @@ a.github:hover {
   color:var(--color-highlight);
   font-weight: lighter;
 }
+
+.timer-normal {
+  color: #222;
+}
+.timer-low {
+  color: orange;
+}
+
+.timer-danger {
+  color: red;
+}
