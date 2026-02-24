@@ -172,13 +172,13 @@ a.github:hover {
   font-weight: lighter;
 }
 
-.timer-normal {
-  color: #ffffff;
+.timer-danger {
+  color: #FF0000;
 }
 .timer-warning {
   color: #FFA500 !important;
 }
 
-.timer-danger {
-  color: #FF0000;
+.timer-normal {
+  color: #ffffff;
 }
