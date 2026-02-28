@@ -1,13 +1,9 @@
-/* A set of default styles */
 :root {
-  /* Generic sizing for the page */
-  --wrapper-height: 100vh;
 
-  /* Fonts for different elements */
+  --wrapper-height: 100vh;
   --font-family: roboto;
   --font-family-list: monospace;
 
-  /* Colors you'll see cascade through the elements */
   --color-bg: #000000; /* Used for the page body background */
   --color-bg-alt: #434343; /* Used for social icons on hover */
   --color-text-main: #ffffff; /* List text ann social icons on hover */
@@ -15,14 +11,14 @@
   --color-highlight: #d0d0d0; /* Highlights */
 }
 
-/* Basic page style resets */
+
 * {
   box-sizing: border-box;
 }
 [hidden] {
   display: none !important;
 }
-/* button styling */
+
 button {
 
   background-color: rgb(0, 0, 0);
@@ -54,7 +50,6 @@ button:hover{
 
 }
 
-/* Page structure */
 body {
   font-family: var(--font-family);
   background-color: var(--color-bg);
@@ -62,7 +57,7 @@ body {
   margin: 0;
   font-size:2.8rem;
 }
-/* Page structure */
+
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
@@ -114,7 +109,6 @@ body {
   }
 }
 
-/* Typography */
 p {
   margin: 1rem;
   line-height: 1.3em;
@@ -132,7 +126,7 @@ h1 {
   color: var(--color-primary);
   justify-content: center;
 }
-/* Link styles */
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -147,7 +141,7 @@ a:focus {
   background: var(--color-primary);
   color:var(--color-highlight);
 }
-/* Navigation grid */
+
 .footer {
   display: flex;
   justify-content: space-between;
