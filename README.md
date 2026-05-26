@@ -1,3 +1,6 @@
+
+Hi there. This is Rohan from the future, and this is probably my first successful HTML project that actually taught me stuff. That's why it's an incredibly simple site, with little styling or functionality.
+
 # Productivity Timer X
 
 A tiny web timer that tells you how much time is left in your day.
